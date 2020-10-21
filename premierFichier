@@ -1,0 +1,30 @@
+phrase1 = "Je s'appelle Groot"
+phrase2 = "Et, je s'appelle Groot"
+
+from maConfig import *
+
+
+
+with open("var.properties") as file1:
+ lines1 = file1.readlines()
+ print(lines1)
+
+with open("mesVariables")as file2:
+ lines2 = file2.read()
+ print(lines2)
+
+# def premierefonction(parametre) :
+#     print(parametre)
+print('avec variables')
+for i in range(3):
+    if i < 2:
+        print(phrase1)
+    else:
+        print(phrase2)
+
+print('avec maConfig')
+for i in range(3):
+    if i < 2:
+        print(myConfigPhrase1)
+    else:
+        print(myConfigPhrase2)
